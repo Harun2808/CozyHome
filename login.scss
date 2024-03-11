@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+$primaryColor: #f09d51;
+$mainWhite: #fff;
+$mainBlack: #222;
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: $mainWhite;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 24px;
+    background-color: #1b372b;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: #2f604b;
+    }
+  }
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+
+  margin: 200px auto;
+}
+
+.login-form {
+  background-color: #1b372b;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+
+    label {
+      color: #fff;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  }
+
+  button[type="submit"] {
+    background-color: $primaryColor;
+    color: $mainWhite;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($primaryColor, 10%);
+    }
+  }
+}
